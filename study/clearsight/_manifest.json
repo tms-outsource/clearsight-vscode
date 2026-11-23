@@ -1,0 +1,36 @@
+{
+ "id": "tms-outsource.clearsight-theme",
+ "version": "0.1.0",
+ "themes": [
+  {
+   "label": "Clearsight",
+   "uiTheme": "vs-dark",
+   "path": "./themes/clearsight-color-theme.json"
+  },
+  {
+   "label": "Clearsight No Italics",
+   "uiTheme": "vs-dark",
+   "path": "./themes/clearsight-no-italics-color-theme.json"
+  },
+  {
+   "label": "Clearsight Soft",
+   "uiTheme": "vs-dark",
+   "path": "./themes/clearsight-soft-color-theme.json"
+  },
+  {
+   "label": "Clearsight Soft No Italics",
+   "uiTheme": "vs-dark",
+   "path": "./themes/clearsight-soft-no-italics-color-theme.json"
+  },
+  {
+   "label": "Clearsight Light",
+   "uiTheme": "vs",
+   "path": "./themes/clearsight-light-color-theme.json"
+  },
+  {
+   "label": "Clearsight Light No Italics",
+   "uiTheme": "vs",
+   "path": "./themes/clearsight-light-no-italics-color-theme.json"
+  }
+ ]
+}

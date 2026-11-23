@@ -3,6 +3,7 @@ scripts/**
 palette/**
 preview/**
 dist/**
+study/**
 PLAN.md
 node_modules/**
 *.vsix

@@ -1,0 +1,1198 @@
+[
+  {
+    "id": "GitHub.github-vscode-theme",
+    "name": "GitHub Theme",
+    "publisher": "GitHub",
+    "installs": 20700466,
+    "rating": 4.59,
+    "version": "6.3.5",
+    "lastUpdated": "2024-10-03T05:36:07.747Z",
+    "manifestUrl": "https://GitHub.gallerycdn.vsassets.io/extensions/github/github-vscode-theme/6.3.5/1727933603062/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://GitHub.gallerycdn.vsassets.io/extensions/github/github-vscode-theme/6.3.5/1727933603062/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "colorblind",
+      "color-theme",
+      "dark",
+      "github",
+      "light",
+      "protanopia",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "GitHub Light Default",
+        "uiTheme": "vs",
+        "path": "./themes/light-default.json"
+      },
+      {
+        "label": "GitHub Light High Contrast",
+        "uiTheme": "hc-light",
+        "path": "./themes/light-high-contrast.json"
+      },
+      {
+        "label": "GitHub Light Colorblind (Beta)",
+        "uiTheme": "vs",
+        "path": "./themes/light-colorblind.json"
+      },
+      {
+        "label": "GitHub Dark Default",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-default.json"
+      },
+      {
+        "label": "GitHub Dark High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/dark-high-contrast.json"
+      },
+      {
+        "label": "GitHub Dark Colorblind (Beta)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-colorblind.json"
+      },
+      {
+        "label": "GitHub Dark Dimmed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-dimmed.json"
+      },
+      {
+        "label": "GitHub Light",
+        "uiTheme": "vs",
+        "path": "./themes/light.json"
+      },
+      {
+        "label": "GitHub Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "zhuangtongfa.Material-theme",
+    "name": "One Dark Pro",
+    "publisher": "binaryify",
+    "installs": 12945762,
+    "rating": 4.67,
+    "version": "3.20.7",
+    "lastUpdated": "2026-11-20T03:34:35.667Z",
+    "manifestUrl": "https://zhuangtongfa.gallerycdn.vsassets.io/extensions/zhuangtongfa/material-theme/3.20.7/1795145265661/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://zhuangtongfa.gallerycdn.vsassets.io/extensions/zhuangtongfa/material-theme/3.20.7/1795145265661/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "atom",
+      "color-theme",
+      "one dark",
+      "one dark pro",
+      "OneDark",
+      "onedark pro",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "One Dark Pro",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneDark-Pro.json"
+      },
+      {
+        "label": "One Dark Pro Flat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneDark-Pro-flat.json"
+      },
+      {
+        "label": "One Dark Pro Darker",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneDark-Pro-darker.json"
+      },
+      {
+        "label": "One Dark Pro Mix",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneDark-Pro-mix.json"
+      },
+      {
+        "label": "One Dark Pro Night Flat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneDark-Pro-night-flat.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "dracula-theme.theme-dracula",
+    "name": "Dracula Theme Official",
+    "publisher": "Dracula Theme",
+    "installs": 11170149,
+    "rating": 4.78,
+    "version": "2.25.1",
+    "lastUpdated": "2024-07-17T12:56:35.033Z",
+    "manifestUrl": "https://dracula-theme.gallerycdn.vsassets.io/extensions/dracula-theme/theme-dracula/2.25.1/1721220788613/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://dracula-theme.gallerycdn.vsassets.io/extensions/dracula-theme/theme-dracula/2.25.1/1721220788613/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "color-theme",
+      "dark",
+      "dracula",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Dracula Theme",
+        "uiTheme": "vs-dark",
+        "path": "./theme/dracula.json"
+      },
+      {
+        "label": "Dracula Theme Soft",
+        "uiTheme": "vs-dark",
+        "path": "./theme/dracula-soft.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "akamud.vscode-theme-onedark",
+    "name": "Atom One Dark Theme",
+    "publisher": "Mahmoud Ali",
+    "installs": 7428265,
+    "rating": 4.78,
+    "version": "2.3.0",
+    "lastUpdated": "2022-10-08T14:12:57.923Z",
+    "manifestUrl": "https://akamud.gallerycdn.vsassets.io/extensions/akamud/vscode-theme-onedark/2.3.0/1665238240663/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://akamud.gallerycdn.vsassets.io/extensions/akamud/vscode-theme-onedark/2.3.0/1665238240663/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__sponsor_extension",
+      "__web_extension",
+      "atom",
+      "color-theme",
+      "dark",
+      "one dark",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Atom One Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneDark.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "teabyii.ayu",
+    "name": "Ayu",
+    "publisher": "Ayu Theme",
+    "installs": 4252921,
+    "rating": 4.76,
+    "version": "1.6.0",
+    "lastUpdated": "2026-11-03T09:45:00.99Z",
+    "manifestUrl": "https://teabyii.gallerycdn.vsassets.io/extensions/teabyii/ayu/1.6.0/1793698782766/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://teabyii.gallerycdn.vsassets.io/extensions/teabyii/ayu/1.6.0/1793698782766/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "ayu",
+      "color-theme",
+      "icon-theme",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Ayu Light",
+        "uiTheme": "vs",
+        "path": "./ayu-light.json"
+      },
+      {
+        "label": "Ayu Mirage",
+        "uiTheme": "vs-dark",
+        "path": "./ayu-mirage.json"
+      },
+      {
+        "label": "Ayu Dark",
+        "uiTheme": "vs-dark",
+        "path": "./ayu-dark.json"
+      },
+      {
+        "label": "Ayu Light Unbordered",
+        "uiTheme": "vs",
+        "path": "./ayu-light-unbordered.json"
+      },
+      {
+        "label": "Ayu Mirage Unbordered",
+        "uiTheme": "vs-dark",
+        "path": "./ayu-mirage-unbordered.json"
+      },
+      {
+        "label": "Ayu Dark Unbordered",
+        "uiTheme": "vs-dark",
+        "path": "./ayu-dark-unbordered.json"
+      }
+    ],
+    "iconThemes": 1,
+    "extensionDependencies": []
+  },
+  {
+    "id": "monokai.theme-monokai-pro-vscode",
+    "name": "Monokai Pro",
+    "publisher": "monokai",
+    "installs": 4204451,
+    "rating": 3.58,
+    "version": "2.0.17",
+    "lastUpdated": "2026-11-11T06:30:22.62Z",
+    "manifestUrl": "https://monokai.gallerycdn.vsassets.io/extensions/monokai/theme-monokai-pro-vscode/2.0.17/1794378303970/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://monokai.gallerycdn.vsassets.io/extensions/monokai/theme-monokai-pro-vscode/2.0.17/1794378303970/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__sponsor_extension",
+      "__web_extension",
+      "beautiful functionality",
+      "color-theme",
+      "dark",
+      "focus",
+      "icons",
+      "icon-theme",
+      "light",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Monokai Pro",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Monokai Pro.json"
+      },
+      {
+        "label": "Monokai Pro (Filter Octagon)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Monokai Pro (Filter Octagon).json"
+      },
+      {
+        "label": "Monokai Pro (Filter Ristretto)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Monokai Pro (Filter Ristretto).json"
+      },
+      {
+        "label": "Monokai Pro (Filter Spectrum)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Monokai Pro (Filter Spectrum).json"
+      },
+      {
+        "label": "Monokai Pro (Filter Machine)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Monokai Pro (Filter Machine).json"
+      },
+      {
+        "label": "Monokai Pro Light",
+        "uiTheme": "vs",
+        "path": "./themes/Monokai Pro Light.json"
+      },
+      {
+        "label": "Monokai Pro Light (Filter Sun)",
+        "uiTheme": "vs",
+        "path": "./themes/Monokai Pro Light (Filter Sun).json"
+      },
+      {
+        "label": "Monokai Classic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Monokai Classic.json"
+      }
+    ],
+    "iconThemes": 16,
+    "extensionDependencies": []
+  },
+  {
+    "id": "johnpapa.winteriscoming",
+    "name": "Winter is Coming Theme",
+    "publisher": "John Papa",
+    "installs": 3777502,
+    "rating": 4.56,
+    "version": "1.5.0",
+    "lastUpdated": "2026-07-20T17:27:13.837Z",
+    "manifestUrl": "https://johnpapa.gallerycdn.vsassets.io/extensions/johnpapa/winteriscoming/1.5.0/1784568211726/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://johnpapa.gallerycdn.vsassets.io/extensions/johnpapa/winteriscoming/1.5.0/1784568211726/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "color-theme",
+      "Dark Theme",
+      "Light Theme",
+      "Theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Winter is Coming (Dark Blue)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/WinterIsComing-dark-blue-color-theme.json"
+      },
+      {
+        "label": "Winter is Coming (Dark Blue - No Italics)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/WinterIsComing-dark-blue-color-no-italics-theme.json"
+      },
+      {
+        "label": "Winter is Coming (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/WinterIsComing-light-color-theme.json"
+      },
+      {
+        "label": "Winter is Coming (Light - No Italics)",
+        "uiTheme": "vs",
+        "path": "./themes/WinterIsComing-light-color-no-italics-theme.json"
+      },
+      {
+        "label": "Winter is Coming (Dark Black)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/WinterIsComing-dark-color-theme.json"
+      },
+      {
+        "label": "Winter is Coming (Dark Black - No Italics)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/WinterIsComing-dark-color-no-italics-theme.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "sdras.night-owl",
+    "name": "Night Owl",
+    "publisher": "sarah.drasner",
+    "installs": 3617450,
+    "rating": 4.85,
+    "version": "2.1.1",
+    "lastUpdated": "2024-12-31T21:24:56.957Z",
+    "manifestUrl": "https://sdras.gallerycdn.vsassets.io/extensions/sdras/night-owl/2.1.1/1735680079617/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://sdras.gallerycdn.vsassets.io/extensions/sdras/night-owl/2.1.1/1735680079617/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "Accessible Theme",
+      "color-theme",
+      "Dark Theme",
+      "Early Bird",
+      "Light Owl",
+      "Light Theme",
+      "Night Owl",
+      "Night Theme",
+      "Snow Owl",
+      "Theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Night Owl",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Night Owl-color-theme.json"
+      },
+      {
+        "label": "Night Owl (No Italics)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Night Owl-color-theme-noitalic.json"
+      },
+      {
+        "label": "Night Owl Light",
+        "uiTheme": "vs",
+        "path": "./themes/Night Owl-Light-color-theme.json"
+      },
+      {
+        "label": "Night Owl Light (No Italics)",
+        "uiTheme": "vs",
+        "path": "./themes/Night Owl-Light-color-theme-noitalic.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "enkia.tokyo-night",
+    "name": "Tokyo Night",
+    "publisher": "enkia",
+    "installs": 3038927,
+    "rating": 4.97,
+    "version": "1.1.2",
+    "lastUpdated": "2025-02-05T19:37:57.45Z",
+    "manifestUrl": "https://enkia.gallerycdn.vsassets.io/extensions/enkia/tokyo-night/1.1.2/1738784080756/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://enkia.gallerycdn.vsassets.io/extensions/enkia/tokyo-night/1.1.2/1738784080756/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "clean",
+      "color-theme",
+      "contrast",
+      "dark",
+      "light",
+      "theme",
+      "tokyo"
+    ],
+    "colorThemes": [
+      {
+        "label": "Tokyo Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tokyo-night-color-theme.json"
+      },
+      {
+        "label": "Tokyo Night Storm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tokyo-night-storm-color-theme.json"
+      },
+      {
+        "label": "Tokyo Night Light",
+        "uiTheme": "vs",
+        "path": "./themes/tokyo-night-light-color-theme.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "azemoh.one-monokai",
+    "name": "One Monokai Theme",
+    "publisher": "Joshua Azemoh",
+    "installs": 2970398,
+    "rating": 4.9,
+    "version": "0.5.2",
+    "lastUpdated": "2024-08-20T01:20:30.797Z",
+    "manifestUrl": "https://azemoh.gallerycdn.vsassets.io/extensions/azemoh/one-monokai/0.5.2/1724116658202/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://azemoh.gallerycdn.vsassets.io/extensions/azemoh/one-monokai/0.5.2/1724116658202/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "color-theme",
+      "Monokai",
+      "Onedark",
+      "Theme",
+      "Vscode"
+    ],
+    "colorThemes": [
+      {
+        "label": "One Monokai",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneMonokai-color-theme.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "whizkydee.material-palenight-theme",
+    "name": "Palenight Theme",
+    "publisher": "Olaolu Olawuyi",
+    "installs": 2670520,
+    "rating": 4.93,
+    "version": "2.0.5",
+    "lastUpdated": "2026-09-16T23:40:21.553Z",
+    "manifestUrl": "https://whizkydee.gallerycdn.vsassets.io/extensions/whizkydee/material-palenight-theme/2.0.5/1789601772008/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://whizkydee.gallerycdn.vsassets.io/extensions/whizkydee/material-palenight-theme/2.0.5/1789601772008/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "color-theme",
+      "dark",
+      "material",
+      "material theme",
+      "palenight",
+      "purple",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Palenight Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/palenight.json"
+      },
+      {
+        "label": "Palenight Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/palenight-italic.json"
+      },
+      {
+        "label": "Palenight Operator",
+        "uiTheme": "vs-dark",
+        "path": "./themes/palenight-operator.json"
+      },
+      {
+        "label": "Palenight (Mild Contrast)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/palenight-mild-contrast.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "RobbOwen.synthwave-vscode",
+    "name": "SynthWave '84",
+    "publisher": "Robb Owen",
+    "installs": 2576668,
+    "rating": 4.8,
+    "version": "0.1.20",
+    "lastUpdated": "2025-07-17T15:02:41.347Z",
+    "manifestUrl": "https://RobbOwen.gallerycdn.vsassets.io/extensions/robbowen/synthwave-vscode/0.1.20/1752764310927/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://RobbOwen.gallerycdn.vsassets.io/extensions/robbowen/synthwave-vscode/0.1.20/1752764310927/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "80s",
+      "color-theme",
+      "retro",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "SynthWave '84",
+        "uiTheme": "vs-dark",
+        "path": "./themes/synthwave-color-theme.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "ahmadawais.shades-of-purple",
+    "name": "Shades of Purple",
+    "publisher": "Ahmad Awais ⚡",
+    "installs": 2364438,
+    "rating": 4.93,
+    "version": "7.3.6",
+    "lastUpdated": "2025-10-15T06:02:24.517Z",
+    "manifestUrl": "https://ahmadawais.gallerycdn.vsassets.io/extensions/ahmadawais/shades-of-purple/7.3.6/1760507898068/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://ahmadawais.gallerycdn.vsassets.io/extensions/ahmadawais/shades-of-purple/7.3.6/1760507898068/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "Cobalt",
+      "color-theme",
+      "Dark Theme",
+      "Shade of Purple",
+      "Shades of Purple",
+      "terminal",
+      "theme",
+      "VSCode Power User"
+    ],
+    "colorThemes": [
+      {
+        "label": "Shades of Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shades-of-purple-color-theme.json"
+      },
+      {
+        "label": "Shades of Purple (Super Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shades-of-purple-color-theme-super-dark.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "wesbos.theme-cobalt2",
+    "name": "Cobalt2 Theme Official",
+    "publisher": "Wes Bos",
+    "installs": 1914873,
+    "rating": 4.75,
+    "version": "2.5.0",
+    "lastUpdated": "2025-01-07T18:43:41.16Z",
+    "manifestUrl": "https://wesbos.gallerycdn.vsassets.io/extensions/wesbos/theme-cobalt2/2.5.0/1736275209687/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://wesbos.gallerycdn.vsassets.io/extensions/wesbos/theme-cobalt2/2.5.0/1736275209687/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "color-theme",
+      "theme",
+      "Themes",
+      "VSCode"
+    ],
+    "colorThemes": [
+      {
+        "label": "Cobalt2",
+        "uiTheme": "vs-dark",
+        "path": "./theme/cobalt2.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "EliverLara.andromeda",
+    "name": "Andromeda",
+    "publisher": "Eliver  Lara",
+    "installs": 1715666,
+    "rating": 4.95,
+    "version": "1.10.0",
+    "lastUpdated": "2026-01-09T20:31:57.643Z",
+    "manifestUrl": "https://EliverLara.gallerycdn.vsassets.io/extensions/eliverlara/andromeda/1.10.0/1767990429367/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://EliverLara.gallerycdn.vsassets.io/extensions/eliverlara/andromeda/1.10.0/1767990429367/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__sponsor_extension",
+      "__web_extension",
+      "color-theme",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Andromeda",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Andromeda-color-theme.json"
+      },
+      {
+        "label": "Andromeda Bordered",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Andromeda-color-theme-bordered.json"
+      },
+      {
+        "label": "Andromeda Italic Bordered",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Andromeda-italic-color-theme-bordered.json"
+      },
+      {
+        "label": "Andromeda Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Andromeda-italic-color-theme.json"
+      },
+      {
+        "label": "Andromeda Colorizer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Andromeda-colorizer.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "tal7aouy.theme",
+    "name": "Theme",
+    "publisher": "Mhammed Talhaouy",
+    "installs": 1640967,
+    "rating": 4.77,
+    "version": "3.1.0",
+    "lastUpdated": "2023-09-27T22:19:17.1Z",
+    "manifestUrl": "https://tal7aouy.gallerycdn.vsassets.io/extensions/tal7aouy/theme/3.1.0/1695852970110/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://tal7aouy.gallerycdn.vsassets.io/extensions/tal7aouy/theme/3.1.0/1695852970110/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "color-theme",
+      "Customize",
+      "Dark Theme",
+      "One Dark",
+      "One Theme",
+      "Professional",
+      "Theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Theme.json"
+      },
+      {
+        "label": "Theme Flat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ThemeFlat.json"
+      },
+      {
+        "label": "Theme Mix",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ThemeMix.json"
+      },
+      {
+        "label": "Theme Darker",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ThemeDarker.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "BeardedBear.beardedtheme",
+    "name": "Bearded Theme",
+    "publisher": "BeardedBear",
+    "installs": 1540519,
+    "rating": 4.92,
+    "version": "10.1.0",
+    "lastUpdated": "2025-04-21T21:49:21.26Z",
+    "manifestUrl": "https://BeardedBear.gallerycdn.vsassets.io/extensions/beardedbear/beardedtheme/10.1.0/1745271947219/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://BeardedBear.gallerycdn.vsassets.io/extensions/beardedbear/beardedtheme/10.1.0/1745271947219/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__sponsor_extension",
+      "__web_extension",
+      "arc",
+      "bear",
+      "bearded",
+      "colorblind",
+      "color-theme",
+      "dark",
+      "light",
+      "milkshake",
+      "monokai",
+      "oceanic",
+      "oled",
+      "solarized",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Bearded Theme Monokai Metallian",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-metallian.json"
+      },
+      {
+        "label": "Bearded Theme Monokai Terra",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-terra.json"
+      },
+      {
+        "label": "Bearded Theme Monokai Stone",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-stone.json"
+      },
+      {
+        "label": "Bearded Theme Monokai Black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-black.json"
+      },
+      {
+        "label": "Bearded Theme Monokai Reversed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-reversed.json"
+      },
+      {
+        "label": "Bearded Theme Solarized",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-solarized-dark.json"
+      },
+      {
+        "label": "Bearded Theme Solarized Reversed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-solarized-reversed.json"
+      },
+      {
+        "label": "Bearded Theme Solarized Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-solarized-light.json"
+      },
+      {
+        "label": "Bearded Theme Oceanic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-oceanic.json"
+      },
+      {
+        "label": "Bearded Theme Oceanic Reversed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-oceanic-reversed.json"
+      },
+      {
+        "label": "Bearded Theme Arc",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc.json"
+      },
+      {
+        "label": "Bearded Theme Arc Eggplant",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc-eggplant.json"
+      },
+      {
+        "label": "Bearded Theme Arc EolStorm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc-eolstorm.json"
+      },
+      {
+        "label": "Bearded Theme Arc Blueberry",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc-blueberry.json"
+      },
+      {
+        "label": "Bearded Theme Arc Reversed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc-reversed.json"
+      },
+      {
+        "label": "Bearded Theme Black & Amethyst",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-&-amethyst.json"
+      },
+      {
+        "label": "Bearded Theme Black & Amethyst Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-&-amethyst-soft.json"
+      },
+      {
+        "label": "Bearded Theme Black & Diamond",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-&-diamond.json"
+      },
+      {
+        "label": "Bearded Theme Black & Diamond Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-&-diamond-soft.json"
+      },
+      {
+        "label": "Bearded Theme Black & Emerald",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-&-emerald.json"
+      },
+      {
+        "label": "Bearded Theme Black & Emerald Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-&-emerald-soft.json"
+      },
+      {
+        "label": "Bearded Theme Black & Gold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-&-gold.json"
+      },
+      {
+        "label": "Bearded Theme Black & Gold Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-&-gold-soft.json"
+      },
+      {
+        "label": "Bearded Theme Black & Ruby",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-&-ruby.json"
+      },
+      {
+        "label": "Bearded Theme Black & Ruby Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-&-ruby-soft.json"
+      },
+      {
+        "label": "Bearded Theme Stained Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-stained-purple.json"
+      },
+      {
+        "label": "Bearded Theme Stained Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-stained-blue.json"
+      },
+      {
+        "label": "Bearded Theme Vivid Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-vivid-purple.json"
+      },
+      {
+        "label": "Bearded Theme Vivid Black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-vivid-black.json"
+      },
+      {
+        "label": "Bearded Theme Vivid Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-vivid-light.json"
+      },
+      {
+        "label": "Bearded Theme feat. Will",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-feat-will.json"
+      },
+      {
+        "label": "Bearded Theme feat. Gold D Raynh",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-feat-gold-d-raynh.json"
+      },
+      {
+        "label": "Bearded Theme feat. Melle Julie",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-feat-mellejulie.json"
+      },
+      {
+        "label": "Bearded Theme feat. Melle Julie Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-feat-mellejulie-light.json"
+      },
+      {
+        "label": "Bearded Theme feat. Mintshake D Raynh",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-feat-gold-d-raynh-light.json"
+      },
+      {
+        "label": "Bearded Theme feat. WebDevCody",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-feat-webDevCody.json"
+      },
+      {
+        "label": "Bearded Theme Earth",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-earth.json"
+      },
+      {
+        "label": "Bearded Theme Coffee",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-coffee.json"
+      },
+      {
+        "label": "Bearded Theme Coffee Reversed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-coffee-reversed.json"
+      },
+      {
+        "label": "Bearded Theme Coffee Cream",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-coffee-cream.json"
+      },
+      {
+        "label": "Bearded Theme Void",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-void.json"
+      },
+      {
+        "label": "Bearded Theme Altica",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-altica.json"
+      },
+      {
+        "label": "Bearded Theme Anthracite",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-classics-anthracite.json"
+      },
+      {
+        "label": "Bearded Theme Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-classics-light.json"
+      },
+      {
+        "label": "Bearded Theme Surprising Eggplant",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-surprising-eggplant.json"
+      },
+      {
+        "label": "Bearded Theme Surprising Blueberry",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-surprising-blueberry.json"
+      },
+      {
+        "label": "Bearded Theme Surprising Watermelon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-surprising-watermelon.json"
+      },
+      {
+        "label": "Bearded Theme HC Ebony",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-ebony.json"
+      },
+      {
+        "label": "Bearded Theme HC Midnight Void",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-midnightvoid.json"
+      },
+      {
+        "label": "Bearded Theme HC Wonderland Wood",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-wonderland-wood.json"
+      },
+      {
+        "label": "Bearded Theme HC Brewing Storm",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-brewing-storm.json"
+      },
+      {
+        "label": "Bearded Theme HC Minuit",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-minuit.json"
+      },
+      {
+        "label": "Bearded Theme HC Chocolate Espresso",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-chocolate-espresso.json"
+      },
+      {
+        "label": "Bearded Theme HC Flurry",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-flurry.json"
+      },
+      {
+        "label": "Bearded Theme Milkshake Raspberry",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-milkshake-raspberry.json"
+      },
+      {
+        "label": "Bearded Theme Milkshake Blueberry",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-milkshake-blueberry.json"
+      },
+      {
+        "label": "Bearded Theme Milkshake Mango",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-milkshake-mango.json"
+      },
+      {
+        "label": "Bearded Theme Milkshake Mint",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-milkshake-mint.json"
+      },
+      {
+        "label": "Bearded Theme Milkshake Vanilla Banana",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-milkshake-vanilla.json"
+      },
+      {
+        "label": "Bearded Themanopia (Experimental)",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-themanopia.json"
+      },
+      {
+        "label": "Bearded Theme Aquarelle Cymbidium",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-aquarelle-cymbidium.json"
+      },
+      {
+        "label": "Bearded Theme Aquarelle Hydrangea",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-aquarelle-hydrangea.json"
+      },
+      {
+        "label": "Bearded Theme Aquarelle Lilac",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-aquarelle-lilac.json"
+      },
+      {
+        "label": "Bearded Theme OLED (Experimental)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-oled.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "Catppuccin.catppuccin-vsc",
+    "name": "Catppuccin for VSCode",
+    "publisher": "Catppuccin",
+    "installs": 1502306,
+    "rating": 4.97,
+    "version": "3.19.0",
+    "lastUpdated": "2026-05-02T09:38:09.7Z",
+    "manifestUrl": "https://Catppuccin.gallerycdn.vsassets.io/extensions/catppuccin/catppuccin-vsc/3.19.0/1777714479763/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://Catppuccin.gallerycdn.vsassets.io/extensions/catppuccin/catppuccin-vsc/3.19.0/1777714479763/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__sponsor_extension",
+      "__web_extension",
+      "color-theme",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Catppuccin Mocha",
+        "uiTheme": "vs-dark",
+        "path": "./themes/mocha.json"
+      },
+      {
+        "label": "Catppuccin Macchiato",
+        "uiTheme": "vs-dark",
+        "path": "./themes/macchiato.json"
+      },
+      {
+        "label": "Catppuccin Frappé",
+        "uiTheme": "vs-dark",
+        "path": "./themes/frappe.json"
+      },
+      {
+        "label": "Catppuccin Latte",
+        "uiTheme": "vs",
+        "path": "./themes/latte.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "akamud.vscode-theme-onelight",
+    "name": "Atom One Light Theme",
+    "publisher": "Mahmoud Ali",
+    "installs": 1464699,
+    "rating": 4.92,
+    "version": "2.3.0",
+    "lastUpdated": "2022-10-08T14:12:49.043Z",
+    "manifestUrl": "https://akamud.gallerycdn.vsassets.io/extensions/akamud/vscode-theme-onelight/2.3.0/1665238233171/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://akamud.gallerycdn.vsassets.io/extensions/akamud/vscode-theme-onelight/2.3.0/1665238233171/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__sponsor_extension",
+      "__web_extension",
+      "atom",
+      "color-theme",
+      "light",
+      "one light",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Atom One Light",
+        "uiTheme": "vs",
+        "path": "./themes/OneLight.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  },
+  {
+    "id": "liviuschera.noctis",
+    "name": "Noctis",
+    "publisher": "Liviu Schera",
+    "installs": 1403280,
+    "rating": 4.94,
+    "version": "10.43.3",
+    "lastUpdated": "2024-03-27T06:45:10.9Z",
+    "manifestUrl": "https://liviuschera.gallerycdn.vsassets.io/extensions/liviuschera/noctis/10.43.3/1711521765545/Microsoft.VisualStudio.Code.Manifest",
+    "vsixUrl": "https://liviuschera.gallerycdn.vsassets.io/extensions/liviuschera/noctis/10.43.3/1711521765545/Microsoft.VisualStudio.Services.VSIXPackage",
+    "tags": [
+      "__web_extension",
+      "azure",
+      "blue",
+      "bold",
+      "color-theme",
+      "italic",
+      "Noctis",
+      "semantic",
+      "theme"
+    ],
+    "colorThemes": [
+      {
+        "label": "Noctis Lux",
+        "uiTheme": "vs",
+        "path": "./themes/lux.json"
+      },
+      {
+        "label": "Noctis Hibernus",
+        "uiTheme": "vs",
+        "path": "./themes/hibernus.json"
+      },
+      {
+        "label": "Noctis Lilac",
+        "uiTheme": "vs",
+        "path": "./themes/lilac.json"
+      },
+      {
+        "label": "Noctis",
+        "uiTheme": "vs-dark",
+        "path": "./themes/noctis.json"
+      },
+      {
+        "label": "Noctis Azureus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/azureus.json"
+      },
+      {
+        "label": "Noctis Bordo",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bordo.json"
+      },
+      {
+        "label": "Noctis Obscuro",
+        "uiTheme": "vs-dark",
+        "path": "./themes/obscuro.json"
+      },
+      {
+        "label": "Noctis Sereno",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sereno.json"
+      },
+      {
+        "label": "Noctis Uva",
+        "uiTheme": "vs-dark",
+        "path": "./themes/uva.json"
+      },
+      {
+        "label": "Noctis Viola",
+        "uiTheme": "vs-dark",
+        "path": "./themes/viola.json"
+      },
+      {
+        "label": "Noctis Minimus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/minimus.json"
+      }
+    ],
+    "iconThemes": 0,
+    "extensionDependencies": []
+  }
+]

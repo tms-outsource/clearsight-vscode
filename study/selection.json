@@ -1,0 +1,19 @@
+{
+  "rule": "Top 20 VS Code Marketplace extensions in the Themes category by install count whose main purpose is a color theme. Excluded: icon themes, extensions that only bundle a theme with other features (C/C++ Themes is auto-installed as a dependency of the C/C++ extension; PowerShell is a language extension), non-theme tools (Power Mode, Custom CSS loader) and extensions marked deprecated by their authors.",
+  "excluded": ["ms-vscode.cpptools-themes", "ms-vscode.PowerShell", "Equinusocio.vsc-material-theme", "PKief.material-icon-theme", "vscode-icons-team.vscode-icons", "Equinusocio.vsc-material-theme-icons", "emmanuelbeziat.vscode-great-icons", "file-icons.file-icons", "miguelsolorio.fluent-icons", "hoovercj.vscode-power-mode"],
+  "flagship": {
+    "GitHub.github-vscode-theme": "GitHub Dark Default",
+    "zhuangtongfa.Material-theme": "One Dark Pro",
+    "dracula-theme.theme-dracula": "Dracula Theme",
+    "teabyii.ayu": "Ayu Dark",
+    "monokai.theme-monokai-pro-vscode": "Monokai Pro",
+    "johnpapa.winteriscoming": "Winter is Coming (Dark Blue)",
+    "sdras.night-owl": "Night Owl",
+    "enkia.tokyo-night": "Tokyo Night",
+    "whizkydee.material-palenight-theme": "Palenight Theme",
+    "ahmadawais.shades-of-purple": "Shades of Purple",
+    "EliverLara.andromeda": "Andromeda",
+    "Catppuccin.catppuccin-vsc": "Catppuccin Mocha",
+    "liviuschera.noctis": "Noctis"
+  }
+}

@@ -1,0 +1,4 @@
+/* layout for the order list */
+:root { --accent: #3b82f6; --radius: 6px; }
+.orders > li:hover { background: var(--accent); padding: 0.5rem 1rem; }
+@media (max-width: 640px) { .btn.primary { width: 100%; font-weight: 600; } }
