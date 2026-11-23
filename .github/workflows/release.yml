@@ -1,0 +1,39 @@
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Tag matches package.json version
+        if: github.ref_type == 'tag'
+        run: |
+          VERSION="v$(node -p "require('./package.json').version")"
+          if [ "$VERSION" != "$GITHUB_REF_NAME" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match package.json $VERSION"
+            exit 1
+          fi
+      - run: node scripts/build.mjs
+      - run: git diff --exit-code themes package.json
+      - run: npm run check
+      - run: npx --yes @vscode/vsce@3.6.0 package --out clearsight-theme.vsix
+      - uses: actions/upload-artifact@v4
+        with:
+          name: clearsight-theme-vsix
+          path: clearsight-theme.vsix
+      - run: npx --yes ovsx@1.3.0 publish --packagePath clearsight-theme.vsix --trusted-publishing

@@ -39,7 +39,7 @@
   "bugs": {
     "url": "https://github.com/tms-outsource/clearsight-vscode/issues"
   },
-  "homepage": "https://github.com/tms-outsource/clearsight-vscode#readme",
+  "homepage": "https://tms-outsource.com/t/clearsight/",
   "scripts": {
     "build": "node scripts/build.mjs",
     "check": "node scripts/check-contrast.mjs && node scripts/check-theme.mjs",
