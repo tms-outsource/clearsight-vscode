@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clearsight preview</title>
+<style>
+[data-variant="dark"]{--bg:#151a20;--bgSidebar:#11151b;--bgActivity:#0e1217;--bgPanel:#11151b;--bgWidget:#1d2229;--bgLine:#1c2128;--selection:#446b9c;--border:#262c33;--fg:#dae0e7;--fgMuted:#a3acb6;--fgSubtle:#727c86;--comment:#8ba2b2;--keyword:#ac93ff;--function:#7cc5ff;--type:#4bb6b2;--string:#bba372;--number:#f88920;--property:#84b1be;--parameter:#ffaca3;--tag:#ff8dcd;--attribute:#ffc77c;--regex:#85da99;--operator:#80bbc5;--punctuation:#a2acb7;--error:#ff8a75;--warning:#ffcaa6;--info:#b1d6ff;--hint:#9de8c2;--added:#75ddb9;--modified:#c09400;--deleted:#ff877d;--conflict:#ed98ea;--ignored:#727c86;--accent:#5aa3ec;--accentFg:#0c121a;--selectionOnBg:#27394f;--selA:0.38;}
+[data-variant="soft"]{--bg:#20242a;--bgSidebar:#1c2025;--bgActivity:#1a1d22;--bgPanel:#1c2025;--bgWidget:#272c32;--bgLine:#262a30;--selection:#4d6b91;--border:#2f3339;--fg:#ced3d9;--fgMuted:#9ea6ae;--fgSubtle:#79818a;--comment:#8ea1b0;--keyword:#ae96ff;--function:#70c6f6;--type:#70b5b5;--string:#d2b469;--number:#d99484;--property:#70b0d7;--parameter:#f99f90;--tag:#e68ac3;--attribute:#f0c495;--regex:#8bc1a5;--operator:#7cc6d8;--punctuation:#9ea6ae;--error:#f38163;--warning:#f7b885;--info:#7dc1f2;--hint:#00cba8;--added:#97d6a5;--modified:#f5b954;--deleted:#f48481;--conflict:#ff9eef;--ignored:#79818a;--accent:#6da3da;--accentFg:#11161d;--selectionOnBg:#313f51;--selA:0.38;}
+[data-variant="light"]{--bg:#f8f7f2;--bgSidebar:#f2f0eb;--bgActivity:#ebe9e4;--bgPanel:#f2f0eb;--bgWidget:#fdfcf9;--bgLine:#efede6;--selection:#87b2df;--border:#dad7d0;--fg:#232933;--fgMuted:#4f5661;--fgSubtle:#737b87;--comment:#5c6e7c;--keyword:#613883;--function:#006eac;--type:#006a56;--string:#32591c;--number:#a21e00;--property:#00586b;--parameter:#974330;--tag:#9c1d4c;--attribute:#876200;--regex:#37703b;--operator:#005a6f;--punctuation:#4f5661;--error:#a42643;--warning:#995600;--info:#004570;--hint:#006152;--added:#006f57;--modified:#866100;--deleted:#922d2a;--conflict:#7e2770;--ignored:#717884;--accent:#0465af;--accentFg:#fdfcf9;--selectionOnBg:#d8e4ed;--selA:0.28;}
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.5 system-ui,sans-serif;background:#0e1014;color:#e6e6e6;padding:16px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.controls button{background:#1d2129;color:#d8dce3;border:1px solid #333a46;border-radius:6px;padding:6px 10px;cursor:pointer;font:inherit}
+.controls button[aria-pressed="true"]{background:#d8dce3;color:#111}
+.win{display:grid;grid-template-columns:48px 220px 1fr;grid-template-rows:auto 1fr auto auto;border-radius:10px;overflow:hidden;border:1px solid var(--border);max-width:1180px;background:var(--bg);color:var(--fg)}
+.act{grid-row:1/4;background:var(--bgActivity);display:flex;flex-direction:column;align-items:center;gap:18px;padding-top:14px}
+.act i{width:22px;height:22px;border:2px solid var(--fgSubtle);border-radius:5px;display:block}
+.act i.on{border-color:var(--fg);box-shadow:-11px 0 0 -9px var(--accent)}
+.side{grid-row:1/4;background:var(--bgSidebar);border-right:1px solid var(--border);padding:10px 0;font-size:13px}
+.side h2{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fgMuted);margin:0 14px 8px;font-weight:600}
+.side div{padding:2px 14px 2px 22px;display:flex;justify-content:space-between}
+.side div.sel{background:var(--bgLine)}
+.side .added{color:var(--added)}.side .modified{color:var(--modified)}.side .deleted{color:var(--deleted);text-decoration:line-through}.side .ignored{color:var(--ignored)}.side .conflict{color:var(--conflict)}.side .plain{color:var(--fg)}
+.tabs{background:var(--bgSidebar);display:flex;border-bottom:1px solid var(--border);overflow-x:auto}
+.tab{background:transparent;border:0;border-right:1px solid var(--border);color:var(--fgMuted);padding:8px 14px;font:13px system-ui,sans-serif;cursor:pointer;white-space:nowrap}
+.tab.on{background:var(--bg);color:var(--fg);box-shadow:inset 0 2px 0 var(--accent)}
+.editor{padding:10px 0;font:14px/1.6 "JetBrains Mono","Cascadia Code",Consolas,monospace;overflow-x:auto;min-height:420px}
+.ln{display:flex;white-space:pre}
+.ln.cur{background:var(--bgLine)}
+.num{width:52px;text-align:right;padding-right:18px;color:var(--fgSubtle);flex:none;user-select:none}
+.ln.cur .num{color:var(--fg)}
+code{font:inherit;color:var(--fg)}
+mark{background:color-mix(in srgb,var(--selection) calc(var(--selA)*100%),transparent);color:inherit}
+.keyword{color:var(--keyword)}.function{color:var(--function)}.type{color:var(--type)}.string{color:var(--string)}.number{color:var(--number)}.property{color:var(--property)}.parameter{color:var(--parameter)}.tag{color:var(--tag)}.attribute{color:var(--attribute)}.regex{color:var(--regex)}.operator{color:var(--operator)}.comment{color:var(--comment)}.punctuation{color:var(--punctuation)}.fg{color:var(--fg)}
+.panel{grid-column:3;background:var(--bgPanel);border-top:1px solid var(--border);padding:8px 16px;font-size:13px}
+.panel h2{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg);margin:0 0 6px;font-weight:600}
+.panel p{margin:2px 0;color:var(--fgMuted)}
+.panel b{font-weight:600;margin-right:8px}
+.e{color:var(--error)}.w{color:var(--warning)}.i{color:var(--info)}
+.status{grid-column:1/4;background:var(--bgActivity);border-top:1px solid var(--border);color:var(--fgMuted);font-size:12px;padding:3px 12px;display:flex;gap:18px}
+.status .acc{background:var(--accent);color:var(--accentFg);padding:0 8px;margin-left:-12px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><filter id="protan" color-interpolation-filters="linearRGB"><feColorMatrix type="matrix" values="0.152286 1.052583 -0.204868 0 0 0.114503 0.786281 0.099216 0 0 -0.003882 -0.048116 1.051998 0 0 0 0 0 1 0"/></filter><filter id="deutan" color-interpolation-filters="linearRGB"><feColorMatrix type="matrix" values="0.367322 0.860646 -0.227968 0 0 0.280085 0.672501 0.047413 0 0 -0.011820 0.042940 0.968881 0 0 0 0 0 1 0"/></filter><filter id="tritan" color-interpolation-filters="linearRGB"><feColorMatrix type="matrix" values="1.255528 -0.076749 -0.178779 0 0 -0.078411 0.930809 0.147602 0 0 0.004733 0.691367 0.303900 0 0 0 0 0 1 0"/></filter></svg>
+<div class="controls" id="variants"></div>
+<div class="controls" id="visions"></div>
+<div id="stage">
+<div class="win" data-variant="dark">
+  <nav class="act"><i class="on"></i><i></i><i></i><i></i></nav>
+  <aside class="side">
+    <h2>Explorer</h2>
+    <div class="plain sel"><span>user.ts</span></div>
+    <div class="added"><span>invoice.py</span><span>A</span></div>
+    <div class="modified"><span>OrderController.php</span><span>M</span></div>
+    <div class="deleted"><span>legacy.js</span><span>D</span></div>
+    <div class="conflict"><span>routes.php</span><span>!</span></div>
+    <div class="plain"><span>button.html</span></div>
+    <div class="ignored"><span>node_modules</span></div>
+  </aside>
+  <div class="tabs"><button class="tab on" data-file="0">user.ts</button><button class="tab" data-file="1">invoice.py</button><button class="tab" data-file="2">OrderController.php</button><button class="tab" data-file="3">button.html</button></div>
+  <div class="editor"><div class="pane" data-pane="0"><div class="ln"><span class="num">1</span><code><span class="comment">// Fetch a user, cached for one minute</span></code></div><div class="ln"><span class="num">2</span><code><span class="keyword">import</span> <span class="punctuation">{</span> <span class="type">User</span> <span class="punctuation">}</span> <span class="keyword">from</span> <span class="string">'./types'</span><span class="punctuation">;</span></code></div><div class="ln"><span class="num">3</span><code> </code></div><div class="ln"><span class="num">4</span><code><span class="keyword">const</span> <span class="number">CACHE_TTL</span> <span class="operator">=</span> <span class="number">60_000</span><span class="punctuation">;</span></code></div><div class="ln"><span class="num">5</span><code><span class="keyword">const</span> cache <span class="operator">=</span> <span class="keyword">new</span> <span class="type">Map</span><span class="punctuation">&lt;</span><span class="type">string</span><span class="punctuation">,</span> <span class="type">Entry</span><span class="punctuation">&gt;</span>()<span class="punctuation">;</span></code></div><div class="ln"><span class="num">6</span><code> </code></div><div class="ln"><span class="num">7</span><code><span class="keyword">export</span> <span class="keyword">async</span> <span class="keyword">function</span> <span class="function">getUser</span>(<span class="parameter">id</span><span class="punctuation">:</span> <span class="type">string</span>)<span class="punctuation">:</span> <span class="type">Promise</span><span class="punctuation">&lt;</span><span class="type">User</span><span class="punctuation">&gt;</span> <span class="punctuation">{</span></code></div><div class="ln cur"><span class="num">8</span><code>  <span class="keyword">const</span> hit <span class="operator">=</span> cache<span class="punctuation">.</span><span class="function">get</span>(<span class="parameter">id</span>)<span class="punctuation">;</span></code></div><div class="ln"><span class="num">9</span><code>  <span class="keyword">if</span> (<mark>hit</mark> <span class="operator">&amp;&amp;</span> <span class="type">Date</span><span class="punctuation">.</span><span class="function">now</span>() <span class="operator">-</span> hit<span class="punctuation">.</span><span class="property">at</span> <span class="operator">&lt;</span> <span class="number">CACHE_TTL</span>) <span class="keyword">return</span> hit<span class="punctuation">.</span><span class="property">value</span><span class="punctuation">;</span></code></div><div class="ln"><span class="num">10</span><code>  <span class="keyword">const</span> res <span class="operator">=</span> <span class="keyword">await</span> <span class="function">fetch</span>(<span class="string">`/api/users/</span><span class="punctuation">${</span><span class="parameter">id</span><span class="punctuation">}</span><span class="string">`</span>)<span class="punctuation">;</span></code></div><div class="ln"><span class="num">11</span><code>  <span class="keyword">if</span> (<span class="operator">!</span>res<span class="punctuation">.</span><span class="property">ok</span>) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="type">Error</span>(<span class="string">'User not found'</span>)<span class="punctuation">;</span></code></div><div class="ln"><span class="num">12</span><code>  <span class="keyword">return</span> <span class="keyword">this</span><span class="punctuation">.</span><span class="function">parse</span>(<span class="keyword">await</span> res<span class="punctuation">.</span><span class="function">json</span>())<span class="punctuation">;</span></code></div><div class="ln"><span class="num">13</span><code><span class="punctuation">}</span></code></div><div class="ln"><span class="num">14</span><code> </code></div><div class="ln"><span class="num">15</span><code><span class="keyword">export</span> <span class="keyword">const</span> isSlug <span class="operator">=</span> (<span class="parameter">s</span><span class="punctuation">:</span> <span class="type">string</span>) <span class="operator">=&gt;</span> <span class="regex">/^[a-z0-9-]+$/</span><span class="punctuation">.</span><span class="function">test</span>(<span class="parameter">s</span>)<span class="punctuation">;</span></code></div></div><div class="pane" data-pane="1" hidden><div class="ln"><span class="num">1</span><code><span class="keyword">from</span> dataclasses <span class="keyword">import</span> dataclass</code></div><div class="ln"><span class="num">2</span><code> </code></div><div class="ln"><span class="num">3</span><code><span class="punctuation">@</span><span class="function">dataclass</span></code></div><div class="ln"><span class="num">4</span><code><span class="keyword">class</span> <span class="type">Invoice</span><span class="punctuation">:</span></code></div><div class="ln"><span class="num">5</span><code>    total<span class="punctuation">:</span> <span class="type">float</span></code></div><div class="ln"><span class="num">6</span><code>    paid<span class="punctuation">:</span> <span class="type">bool</span> <span class="operator">=</span> <span class="number">False</span></code></div><div class="ln"><span class="num">7</span><code> </code></div><div class="ln"><span class="num">8</span><code>    <span class="keyword">def</span> <span class="function">is_overdue</span>(<span class="keyword">self</span><span class="punctuation">,</span> <span class="parameter">days</span><span class="punctuation">:</span> <span class="type">int</span>) <span class="operator">-&gt;</span> <span class="type">bool</span><span class="punctuation">:</span></code></div><div class="ln"><span class="num">9</span><code>        <span class="comment"># unpaid for more than 30 days</span></code></div><div class="ln"><span class="num">10</span><code>        <span class="keyword">return</span> <span class="keyword">not</span> <span class="keyword">self</span><span class="punctuation">.</span><span class="property">paid</span> <span class="keyword">and</span> <span class="parameter">days</span> <span class="operator">&gt;</span> <span class="number">30</span></code></div></div><div class="pane" data-pane="2" hidden><div class="ln"><span class="num">1</span><code><span class="keyword">&lt;?php</span></code></div><div class="ln"><span class="num">2</span><code> </code></div><div class="ln"><span class="num">3</span><code><span class="keyword">namespace</span> <span class="type">App\Http\Controllers</span><span class="punctuation">;</span></code></div><div class="ln"><span class="num">4</span><code> </code></div><div class="ln"><span class="num">5</span><code><span class="keyword">final</span> <span class="keyword">class</span> <span class="type">OrderController</span> <span class="keyword">extends</span> <span class="type">Controller</span></code></div><div class="ln"><span class="num">6</span><code><span class="punctuation">{</span></code></div><div class="ln"><span class="num">7</span><code>    <span class="keyword">public</span> <span class="keyword">function</span> <span class="function">show</span>(<span class="type">int</span> <span class="parameter">$id</span>)<span class="punctuation">:</span> <span class="type">JsonResponse</span></code></div><div class="ln"><span class="num">8</span><code>    <span class="punctuation">{</span></code></div><div class="ln"><span class="num">9</span><code>        <span class="comment">// 404 when the order does not exist</span></code></div><div class="ln"><span class="num">10</span><code>        $order <span class="operator">=</span> <span class="type">Order</span><span class="operator">::</span><span class="function">findOrFail</span>(<span class="parameter">$id</span>)<span class="punctuation">;</span></code></div><div class="ln"><span class="num">11</span><code>        <span class="keyword">return</span> <span class="function">response</span>()<span class="operator">-&gt;</span><span class="function">json</span>([<span class="string">'status'</span> <span class="operator">=&gt;</span> <span class="keyword">$this</span><span class="operator">-&gt;</span><span class="property">status</span><span class="punctuation">,</span> <span class="string">'total'</span> <span class="operator">=&gt;</span> <span class="number">42.50</span>])<span class="punctuation">;</span></code></div><div class="ln"><span class="num">12</span><code>    <span class="punctuation">}</span></code></div><div class="ln"><span class="num">13</span><code><span class="punctuation">}</span></code></div></div><div class="pane" data-pane="3" hidden><div class="ln"><span class="num">1</span><code><span class="punctuation">&lt;</span><span class="tag">button</span> <span class="attribute">class</span><span class="operator">=</span><span class="string">"btn primary"</span> <span class="attribute">type</span><span class="operator">=</span><span class="string">"submit"</span><span class="punctuation">&gt;</span>Save changes<span class="punctuation">&lt;/</span><span class="tag">button</span><span class="punctuation">&gt;</span></code></div><div class="ln"><span class="num">2</span><code> </code></div><div class="ln"><span class="num">3</span><code><span class="punctuation">&lt;</span><span class="tag">style</span><span class="punctuation">&gt;</span></code></div><div class="ln"><span class="num">4</span><code>  <span class="type">.btn</span><span class="punctuation">:</span><span class="keyword">hover</span> <span class="punctuation">{</span> <span class="property">background</span><span class="punctuation">:</span> <span class="function">var</span>(<span class="number">--accent</span>)<span class="punctuation">;</span> <span class="property">padding</span><span class="punctuation">:</span> <span class="number">0.5rem</span> <span class="number">1rem</span><span class="punctuation">;</span> <span class="punctuation">}</span></code></div><div class="ln"><span class="num">5</span><code><span class="punctuation">&lt;/</span><span class="tag">style</span><span class="punctuation">&gt;</span></code></div></div></div>
+  <div class="panel">
+    <h2>Problems</h2>
+    <p><b class="e">Error</b>Property 'value' does not exist on type 'Entry'. ts(2339)</p>
+    <p><b class="w">Warning</b>'isSlug' is declared but never used.</p>
+    <p><b class="i">Info</b>File is a CommonJS module; it may be converted to an ES module.</p>
+  </div>
+  <footer class="status"><span class="acc">main</span><span>Ln 8, Col 12</span><span>UTF-8</span><span>TypeScript</span></footer>
+</div>
+</div>
+<script>
+const variants = [["dark","Clearsight"],["soft","Clearsight Soft"],["light","Clearsight Light"]];
+const visions = [['normal','Normal vision'],['protan','Protanopia'],['deutan','Deuteranopia'],['tritan','Tritanopia']];
+const q = new URLSearchParams(location.search);
+const state = { variant: q.get('variant') || 'dark', vision: q.get('vision') || 'normal' };
+const win = document.querySelector('.win');
+const stage = document.getElementById('stage');
+function apply() {
+  win.dataset.variant = state.variant;
+  stage.style.filter = state.vision === 'normal' ? '' : 'url(#' + state.vision + ')';
+  document.querySelectorAll('[data-key]').forEach((b) => b.setAttribute('aria-pressed', String(state[b.dataset.key] === b.dataset.value)));
+}
+function buttons(el, key, list) {
+  for (const [value, label] of list) {
+    const b = document.createElement('button');
+    b.textContent = label; b.dataset.key = key; b.dataset.value = value;
+    b.addEventListener('click', () => { state[key] = value; apply(); });
+    el.appendChild(b);
+  }
+}
+buttons(document.getElementById('variants'), 'variant', variants);
+buttons(document.getElementById('visions'), 'vision', visions);
+document.querySelectorAll('.tab').forEach((t) => t.addEventListener('click', () => {
+  document.querySelectorAll('.tab').forEach((x) => x.classList.toggle('on', x === t));
+  document.querySelectorAll('.pane').forEach((p) => { p.hidden = p.dataset.pane !== t.dataset.file; });
+}));
+apply();
+</script>
+</body>
+</html>
