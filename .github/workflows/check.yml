@@ -13,5 +13,6 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/build.mjs
-      - run: git diff --exit-code themes package.json
+      - run: node scripts/ports.mjs
+      - run: git diff --exit-code themes package.json extras zed
       - run: npm run check

@@ -1,0 +1,7 @@
+id = "clearsight-theme"
+name = "Clearsight"
+version = "0.1.0"
+schema_version = 1
+authors = ["TMS Outsource <hello@tms-outsource.com>"]
+description = "Readable by default: every syntax color, comments included, passes WCAG AA contrast. Dark, Soft and Light variants, safe for colorblind developers."
+repository = "https://github.com/tms-outsource/clearsight-vscode"

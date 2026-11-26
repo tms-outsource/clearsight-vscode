@@ -1,0 +1,13 @@
+[colors]
+background = "#11151b"
+foreground = "#dae0e7"
+cursor_bg = "#5aa3ec"
+cursor_border = "#5aa3ec"
+cursor_fg = "#11151b"
+selection_bg = "#24364c"
+selection_fg = "#dae0e7"
+ansi = ["#262c33", "#ff8a75", "#75ddb9", "#ffc77c", "#7cc5ff", "#ac93ff", "#4bb6b2", "#a3acb6"]
+brights = ["#727c86", "#ffaa9a", "#89f1cc", "#ffe1ba", "#a6d7ff", "#bdacff", "#60c9c5", "#dae0e7"]
+
+[metadata]
+name = "Clearsight"

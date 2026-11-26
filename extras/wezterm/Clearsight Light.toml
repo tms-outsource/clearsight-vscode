@@ -1,0 +1,13 @@
+[colors]
+background = "#f2f0eb"
+foreground = "#232933"
+cursor_bg = "#0465af"
+cursor_border = "#0465af"
+cursor_fg = "#f2f0eb"
+selection_bg = "#d4dfe8"
+selection_fg = "#232933"
+ansi = ["#232933", "#a42643", "#006f57", "#876200", "#006eac", "#613883", "#006a56", "#737b87"]
+brights = ["#737b87", "#900a33", "#005c48", "#725200", "#005c91", "#502771", "#005746", "#4f5661"]
+
+[metadata]
+name = "Clearsight Light"
